@@ -1,0 +1,54 @@
+body{
+    background-color: plum;
+    text-align: center;
+}
+
+h1 {
+    font-family: fantasy; 
+    font-size: 100 px; 
+    text-align: center;
+}
+
+h2 {
+    color: lightblue; 
+    font-size: 100 px; 
+    text-align: center;
+}
+
+p {
+    background-color: lemonchiffon;
+}
+
+h3 {
+    color: lightgreen; 
+    font size = 3;
+}
+
+p1 {
+    background-color: lightgrey;
+}
+
+ol {
+    border-style: dashed;
+}
+
+caption {
+    color: mintcream;
+}
+
+h4 {
+    color: lavenderblush;
+}
+
+p {
+    background-color: beige;
+}
+
+h5 {
+    color: lightcyan;
+    font size =3;
+}
+
+table {
+    background-color: lightsteelblue;
+}
