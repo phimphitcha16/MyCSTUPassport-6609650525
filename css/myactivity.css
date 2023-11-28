@@ -1,0 +1,21 @@
+nav{
+    background-color: darkorchid;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.menu{
+    display: flex;
+    list-style: none;
+}
+.menu li{
+    margin-left: 10px;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+}
+html{
+    text-align: center;
+}
