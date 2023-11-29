@@ -1,41 +1,145 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: rgb(235, 194, 255);
+  color: #ffffff;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #9cd5ea;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: #eaaaf3;
+}
+
+.aside {
+  background-color: #d29ced;
+  padding: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
         <title>My CSTU Passport</title>
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div id="headerText">
+        <div class="header">
             <h1>This is my cstu passport</h1>
             <h2>Hello everyone</h2>
-            <img src="6609650525.jpg" width="180" height="200" alt="This is my picture.">
         </div>
-            <p>My name is Phimphitcha Ketsira. <br> My nickname is Name. </p> 
-            <video src="MTVideo.MP4" width="300" height="200" controls>
-            </video>
-        </div>
-        <div>
-            <h3>Other details about me</h3>
-            <p1>Graduated from <b>Demonstration School of Phranakhon Si Ayutthaya Rajabhat University.</b> <br> Sciences and Mathematics Program. </p1>
-            <br><br>  My favourite hobby
-            <ol>
+        <div class="row">
+            <div class="col-3 col-s-3 menu">   
+            <ul>
                 <li>Shopping</li>
                 <li>Travel</li>
                 <li>Learn to practice language.</li>
-            </ol>
-            <caption><strong>Contact</strong></caption>
-        <aside></aside>
-            <a target="_blank" href="https://www.facebook.com/phimphitcha.ketsira.3?mibextid=b06tZ0"><img src="fblogo.jpg" width="40" height="40"></a>
-            <a target="_blank" href="https://instagram.com/nnameppc?igshid=YTQwZjQ0NmI0OA=="><img src="iglogo.jpg" width="40" height="40"></a>
-            <a target="_blank" href="https://line.me/ti/p/POZ89okXV0"><img src="linelogo.jpg" width="40" height="40"></a>
-
-
-
+            </ul>
         </div>
-        <div>
-            <h4>My advisor</h4>
-            <p>Asst. Prof.Onjira Sitthisak</p>
-            <img src="advisor.jpg" width="180" height="200">
+        <div class="col-6 col-s-9">
+            <img src="../image/6609650525.jpg" width="180" height="200" alt="This is my picture.">
+            <p>My name is Phimphitcha Ketsira. <br> My nickname is Name. </p> 
+            <video src="../VDO/MTVideo.MP4" width="300" height="200" controls>
+            </video>
+            <h3>Other details about me</h3>
+            <p1>Graduated from <b>Demonstration School of Phranakhon Si Ayutthaya Rajabhat University.</b> <br> Sciences and Mathematics Program. </p1>
+            <br><br>  My favourite hobby
+        </div>
+        
+        <div class="col-3 col-s-12">
+            <div class="aside">
+                <h4>My advisor</h4>
+                <p>Asst. Prof.Onjira Sitthisak</p>
+                <img src="../image/advisor.jpg" width="180" height="200">
+        </div>
+        </div>
+        </div>
+        
+        <div class="footer">       
+            <caption><strong>Contact</strong></caption>
+            <aside></aside>
+            <a target="_blank" href="https://www.facebook.com/phimphitcha.ketsira.3?mibextid=b06tZ0"><img src="../image/fblogo.jpg" width="40" height="40"></a>
+            <a target="_blank" href="https://instagram.com/nnameppc?igshid=YTQwZjQ0NmI0OA=="><img src="../image/iglogo.jpg" width="40" height="40"></a>
+            <a target="_blank" href="https://line.me/ti/p/POZ89okXV0"><img src="../image/linelogo.jpg" width="40" height="40"></a>
         </div>
        
     </body>
